@@ -256,7 +256,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   if (letra==="a") { 
-    return "Es voval"
+    return "Es vocal"
   } else if (letra==="e") {
     return "Es vocal"
   } else if (letra==="i") {
@@ -264,12 +264,14 @@ function esVocal(letra){
   } else if (letra==="o") {
     return "Es vocal"
   } else if (letra==="u") { 
-    retur "Es vocal"
+    return "Es vocal"
   } else if (letra.length !==1) {
     return "Dato incorrecto"
+  } else 
+    return "Dato incorrecto" ;
   }
 
-}
+
 
 
 
