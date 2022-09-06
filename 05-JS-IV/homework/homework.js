@@ -81,13 +81,21 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-   if (objeto.hasOwnProperty(propiedad)) {
-    return true;
-   } else {
+  // if (objeto.hasOwnProperty(propiedad)) {
+   // return true;
+  // } else {
+  //  return false;
+  // }
+   
+   for (const key in objeto) {
+    if (objeto.hasOwnProperty(propiedad)) {
+      return true;
+          }
+   } 
+   
     return false;
    }
-   
-}
+
 
 function verificarPassword (usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
@@ -168,8 +176,11 @@ function agregarMetodoCalculoDescuento (producto) {
     return preciocondescuento
   }
   return producto;
+  
+  
+  }
 
-}
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
